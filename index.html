@@ -3,19 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Задание №1. Калькулятор.</h1>
+    <header class="header-container">
+        <h1 class="header-title">Задание №1. Калькулятор.</h1>
     </header>
     <main>
         <div id="container">
 			<div id="calculator">
 				<div id="result">
-					<div id="history">
-						<p id="history-value"></p>
-					</div>
 					<div id="output">
 						<p id="output-value"></p>
 					</div>
@@ -23,7 +20,7 @@
 				<div id="keyboard">
 					<button class="operator" id="clear">C</button>
 					<button class="operator" id="backspace">CE</button>
-					<button class="operator" id="%">%</button>
+					<button class="empty" id="empty"></button>
 					<button class="operator" id="/">&#247;</button>
 					<button class="number" id="7">7</button>
 					<button class="number" id="8">8</button>
@@ -45,8 +42,8 @@
 			</div>
 		</div>
     </main>
-    <footer>
-         <h6>Выполнил: Григоров Александр Сергеевич</h6>
+    <footer class="footer-container">
+         <h6 class="footer-title">Выполнил: Григоров Александр Сергеевич</h6>
     </footer>
     <script src="script.js"></script>
 </body>

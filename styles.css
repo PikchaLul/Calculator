@@ -1,0 +1,126 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+
+main{
+    height: calc(100vh - 150px);
+}
+
+.header-container{
+    display: flex;
+    position: relative;
+    top: 0;
+    height: 100px;
+    background-color: yellow;
+    align-items: center;
+}
+
+.header-container .header-title{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-container{
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    background-color: yellow;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-container .footer-title{
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 30px;  
+}
+
+#calculator{
+	width: 320px;
+	height: 480px;
+	background-color: #eaedef;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result{
+	height: 60px;
+}
+
+#output{
+	text-align: right;
+	height: 60px;
+	font-size: 30px;
+}
+
+#keyboard{
+	height: 400px;
+}
+
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.number{
+    border: solid 2px;
+}
+
+.number, .empty{
+    background-color: #eaedef;
+}
+
+.number, .operator{
+	cursor: pointer;
+}
+
+.operator:active, .number:active{
+	font-size: 13px;
+}
+
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #ffa500;
+}
+
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #f08080;
+}
+
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #7d93e0;
+}
+
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #9477af;
+}
